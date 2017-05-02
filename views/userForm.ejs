@@ -1,0 +1,15 @@
+<%= process %> User
+
+<form method="POST">
+  <input
+    placeholder="name"
+    name="name"
+    <% if(process != "add"){ %> value="<%= name %>"<% } %>
+  >
+  <input
+    placeholder="age"
+    name="age"
+    <% if(process != "add"){ %> value="<%= age %>"<% } %>
+    >
+  <input type="submit" value="submit">
+</form>
